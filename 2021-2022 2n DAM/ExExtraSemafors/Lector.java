@@ -10,7 +10,8 @@ public class Lector extends Thread	 {
 	String data;
 	AccesRW accesLector; //Dona accces a tots els metodes de la classe Lector
 	
-	public Lector (AccesRW accesLector) {
+	public Lector (String name, AccesRW accesLector) {
+		super(name);
 		this.accesLector = accesLector;
 	}
 	
